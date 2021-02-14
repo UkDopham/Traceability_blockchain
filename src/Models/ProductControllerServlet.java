@@ -1,7 +1,13 @@
 package Models;
 
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import javax.annotation.Resource;
 import javax.servlet.RequestDispatcher;
@@ -23,11 +29,13 @@ public class ProductControllerServlet extends HttpServlet {
 		try {
 			String productName = request.getParameter("searchProduct");
 			System.out.println(productName);
-			Product product = SearchInDB(productName);
-			if (product != null)
+			Product product = SearchProductInDB(productName);
+			List<Step> steps = SeachStepsInDB(productName);
+			if (product != null 
+					&& steps != null)
 			{
 			request.setAttribute("product", product);
-			
+			request.setAttribute("steps", steps);
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/ProductPage.jsp");
 			dispatcher.forward(request, response);
 			}
@@ -43,9 +51,25 @@ public class ProductControllerServlet extends HttpServlet {
 	}
 	
 	
-	private Product SearchInDB(String productName)
+	private Product SearchProductInDB(String productName)
 	{
 		return new Product(productName);
+	}
+	private List<Step> SeachStepsInDB(String productName)
+	{
+		List<Step> steps = new ArrayList<Step>();
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-mm-yyyy", Locale.FRENCH); 
+		try {
+			steps.add(new Step("Coton", "Suisse", simpleDateFormat.parse("01-01-2020"),simpleDateFormat.parse("10-01-2020")));
+			steps.add(new Step("Egrenage", "France", simpleDateFormat.parse("12-01-2020"),simpleDateFormat.parse("20-01-2020")));
+			steps.add(new Step("Filature", "Allemagne", simpleDateFormat.parse("21-01-2020"),simpleDateFormat.parse("10-02-2020")));
+			steps.add(new Step("Manufacture", "Roumanie", simpleDateFormat.parse("12-02-2020"),simpleDateFormat.parse("14-02-2020")));
+			steps.add(new Step("Expédition", "Italie", simpleDateFormat.parse("30-03-2020")));
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return steps;
 	}
 	@Override
 	public void init() throws ServletException {

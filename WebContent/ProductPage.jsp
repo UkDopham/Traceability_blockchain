@@ -39,7 +39,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       <span style=color:cornflowerBlue>le coton biologique, le coton recyclé, le coton régénératif</span></b> et <b><span style=color:cornflowerBlue>le coton de transition</span></b>.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreCotonBio.jsp"><b>READ MORE »</b></a></p>
         </div>
       </div>
     </div>
@@ -60,7 +60,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreBCI.jsp" ><b>READ MORE »</b></a></p>
         </div>
       </div>
     </div>
@@ -81,7 +81,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreAMFORI.jsp"><b>READ MORE »</b></a></p>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreCotonBio.jsp"><b>READ MORE »</b></a></p>
         </div>
       </div>
     </div>
@@ -125,7 +125,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreExpedition.jsp"><b>READ MORE »</b></a></p>
         </div>
       </div>
     </div>
@@ -144,10 +144,10 @@ and is wrapped around the whole page content, except for the footer in this exam
       <h4>Descriptif du produit</h4>
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
-      <li> Nom: </li>
-      <li> Reference: </li>
-      <li> Prix: </li>
-      <li> Photo: 
+      <li> Nom: TODO</li>
+      <li> Reference: TODO</li>
+      <li> Prix: TODO</li>
+      <li> Photo: TODO
         <!-- Image -->
       </li>
     </ul>

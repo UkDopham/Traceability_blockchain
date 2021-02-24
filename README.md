@@ -13,7 +13,7 @@ Traceability of a garment with a blockchain by an ESILV Team.
 # Modèle 
 
 * utilisation de la technologie d'IBM basée sur hyperledger fabric pour la réalisation de la blockchain
-* utilisation du framework JSP pour l'interface utilisateur
+* utilisation de JSP pour l'interface utilisateur
 
 # Participants
 

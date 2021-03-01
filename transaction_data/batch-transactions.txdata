@@ -1,0 +1,44 @@
+[
+    {
+        "transactionName": "batchExists",
+        "transactionLabel": "A test batchExists transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "createBatch",
+        "transactionLabel": "A test createBatch transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "readBatch",
+        "transactionLabel": "A test readBatch transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "updateBatch",
+        "transactionLabel": "A test updateBatch transaction",
+        "arguments": [
+            "001",
+            "some other value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "deleteBatch",
+        "transactionLabel": "A test deleteBatch transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    }
+]

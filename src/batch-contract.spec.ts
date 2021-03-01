@@ -52,12 +52,12 @@ describe('BatchContract', () => {
     describe('#createBatch', () => {
 
         it('should create a batch', async () => {
-            await contract.createBatch(ctx, '1003', 'batch 1003 value');
+            await contract.createBatch(ctx, '1003', 12, 'batch 1003 value');
             ctx.stub.putState.should.have.been.calledOnceWithExactly('1003', Buffer.from('{"value":"batch 1003 value"}'));
         });
 
         it('should throw an error for a batch that already exists', async () => {
-            await contract.createBatch(ctx, '1001', 'myvalue').should.be.rejectedWith(/The batch 1001 already exists/);
+            await contract.createBatch(ctx, '1001',12, 'myvalue').should.be.rejectedWith(/The batch 1001 already exists/);
         });
 
     });
@@ -65,11 +65,11 @@ describe('BatchContract', () => {
     describe('#readBatch', () => {
 
         it('should return a batch', async () => {
-            await contract.readBatch(ctx, '1001').should.eventually.deep.equal({ value: 'batch 1001 value' });
+            await contract.getStatus(ctx, '1001').should.eventually.deep.equal({ value: 'batch 1001 value' });
         });
 
         it('should throw an error for a batch that does not exist', async () => {
-            await contract.readBatch(ctx, '1003').should.be.rejectedWith(/The batch 1003 does not exist/);
+            await contract.getStatus(ctx, '1003').should.be.rejectedWith(/The batch 1003 does not exist/);
         });
 
     });

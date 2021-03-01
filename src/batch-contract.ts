@@ -9,6 +9,7 @@ import { CreateBatchEvent } from './createBatchEvent';
 import { TimestampMapper } from './timestamp';
 import { v1 as uuid } from 'uuid'; // first : npm install uuid
 import { ViewProducerHistoryEvent} from './ViewProducerHistoryEvent';
+import {Iterators } from 'fabric-shim';
 import { AddCertificationEvent } from './AddCertificationEvent';
 @Info({title: 'BatchContract', description: 'FabBatch Smart Contract' })
 export class BatchContract extends Contract {
@@ -74,17 +75,17 @@ export class BatchContract extends Contract {
         return batch;
     }
 
-    /*@Transaction()
+    @Transaction()
     public async updateBatch(ctx: Context, batchId: string, newValue: string): Promise<void> {
         const exists: boolean = await this.batchExists(ctx, batchId);
         if (!exists) {
             throw new Error(`The batch ${batchId} does not exist`);
         }
         const batch: Batch = new Batch();
-        batch.value = newValue;
+        batch.batchId = newValue;
         const buffer: Buffer = Buffer.from(JSON.stringify(batch));
         await ctx.stub.putState(batchId, buffer);
-    }*/
+    }
 
     @Transaction()
     public async deleteBatch(ctx: Context, batchId: string): Promise<void> {
@@ -270,21 +271,22 @@ export class BatchContract extends Contract {
       const res = await historyIterator.next();
       if (res.value) {
         let currentBatchProducer = '';
-        
-        const txnTs = res.value.getTimestamp();
+        //const txnTs = res.value.getTimestamp();
+        const txnTs = ctx.stub.getTxTimestamp();
         const txnDate = TimestampMapper.toDate(txnTs);
-        if (res.value.is_delete) {
-          currentBatchProducer = 'CAR KEY DELETED';
+        if (res.value.isDelete) {
+          currentBatchProducer = 'BATCH KEY DELETED';
         } else {
           // console.log(res.value.value.toString('utf8'));
           try {
-            const batch = JSON.parse(res.value.value.toString('utf8')) as Batch;
+            const batch = JSON.parse(res.value.value.toString()) as Batch;
             currentBatchProducer = batch.producerId;
 
           } catch (err) {
             // result = 'Invalid JSON';
             console.log(err);
-            throw new Error(`The car ${batchId} has an invalid JSON record ${res.value.value.toString('utf8')}.`);
+            // utf8
+            throw new Error(`The batch ${batchId} has an invalid JSON record ${res.value.value.toString()}.`);
           }
         }
 
@@ -298,7 +300,7 @@ export class BatchContract extends Contract {
         } else {
           let includeTxn = true;
           // bounce over deletes as we keep those in the list...
-          if (!res.value.is_delete) {
+          if (!res.value.isDelete) {
             // we start checking on the second (and subsequent) time through so we aways have previous details
             if ((previousProducer === currentBatchProducer) ||
               (previousProducer === currentBatchProducer)) {

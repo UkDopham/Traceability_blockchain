@@ -12,12 +12,14 @@
         "transactionLabel": "A test createBatch transaction",
         "arguments": [
             "001",
+            100,
             "some value"
+
         ],
         "transientData": {}
     },
     {
-        "transactionName": "readBatch",
+        "transactionName": "getStatus",
         "transactionLabel": "A test readBatch transaction",
         "arguments": [
             "001"
@@ -35,6 +37,32 @@
     },
     {
         "transactionName": "deleteBatch",
+        "transactionLabel": "A test deleteBatch transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "changeBatchOwner",
+        "transactionLabel": "A test deleteBatch transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "addCertification",
+        "transactionLabel": "A test deleteBatch transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "getPreviousProducers",
         "transactionLabel": "A test deleteBatch transaction",
         "arguments": [
             "001"

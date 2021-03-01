@@ -7,7 +7,7 @@
 import { Object, Property } from 'fabric-contract-api';
 
 // use an interface to share the definition with client code
-export interface IChangeOwnerEvent {
+export interface IAddCertificationEvent {
     batchId: string;
     producerId: string;
     certification: string[];
@@ -39,7 +39,7 @@ export class AddCertificationEvent implements IAddCertificationEvent {
   //public constructor(producerId: string, previousOwner: string, type: string, txDate: Date) {
     public constructor(batchId: string, certification:string, txDate: Date) {
     this.batchId = batchId;
-    
+
     //Doute sur le push
     this.certification.push(certification)
     //this.previousOwner = previousOwner;

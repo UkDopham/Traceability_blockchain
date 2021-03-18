@@ -4,31 +4,32 @@
 import { Object, Property } from 'fabric-contract-api';
 
 // use an interface to share the definition with client code
-export interface IAddCertificationEvent {
+export interface IChangeProducerEvent {
   docType: string;
   id: string;
-  certification: string;
+  newProducerId: string;
   transactionDate: Date;
 }
 
 @Object()
-export class AddCertificationEvent implements IAddCertificationEvent {
+export class ChangeProducerEvent implements IChangeProducerEvent {
   @Property()
   public docType: string;
 
   @Property()
   public id: string;
 
+
   @Property()
-  public certification: string;
+  public newProducerId: string;
 
   // @Property()
   public transactionDate: Date;
 
-  public constructor(id: string, certification: string, txDate: Date) {
-    this.docType = 'certificateEvent';
+  public constructor(id: string, newProducerId: string, txDate: Date) {
+    this.docType='changeProducerEvent'
     this.id = id;
-    this.certification = certification;
+    this.newProducerId = newProducerId;
     this.transactionDate = txDate;
   }
 

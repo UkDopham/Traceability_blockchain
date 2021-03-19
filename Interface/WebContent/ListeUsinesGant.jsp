@@ -10,7 +10,7 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey">
+<body class="w3-white">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -18,7 +18,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32" style="text-align:center;"> 
-  <img src="Images/Banniere_Produit.png" style="max-width:100%;height:auto;" alt="Banniere" >
+  <img src="Images/factory_back.png" style="max-width:100%;height:auto;" alt="Banniere" >
 </header>
 
 <!-- Grid -->
@@ -29,9 +29,11 @@ and is wrapped around the whole page content, except for the footer in this exam
   
   <!-- Blog entry 1-->
   <div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-      <h1><b>Liste des usines GANT</b></h1>
-    </div>
+    
+<div class='container center'>
+  	<div class="align-left center"><a href="ProductPage.jsp"><img src="Images/Vector.png" style="margin:20px 0 0 0;"/></a></div>
+  	<div class="align-right center"><h2><b>Liste des usines GANT</b></h2></div>
+</div>	
 
     <div class="w3-container">
 	  <iframe src="https://assets.ctfassets.net/ht7j4zfe2bll/6my1Q21rhJDoxxarxpTZUb/938456b69777c0e8962e0bf790a7348e/Transparent_Factory_List_Nov_-_Sheet1__1___1_.pdf?fbclid=IwAR2z4JQ2KntRrZlSrox19IrTbrOjkrTVMMVsjf2HJ1-VovTTmWhGPMOQDDA" width="100%" height="500px">

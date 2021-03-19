@@ -10,15 +10,16 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey">
+<body class="w3-white">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
 <div class="w3-content" style="max-width:1400px">
 
 <!-- Header -->
+
 <header class="w3-container w3-center w3-padding-32" style="text-align:center;"> 
-  <img src="Images/Banniere_Produit.png" style="max-width:100%;height:auto;" alt="Banniere" >
+  <img src="Images/Coton_back.png" style="max-width:100%;height:auto;" alt="Banniere" >
 </header>
 
 <!-- Grid -->
@@ -28,16 +29,18 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
   
   <!-- Blog entry 1-->
-  <div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-	  <img src="Images/BCI_Logo.png" style="max-width:10%;height:auto;float: right; margin:20px 350px 0 0;" alt="BCILogo" >
-      <h1><b>Le coton biologique</b></h1>
-    </div>
+  <div class="w3-margin w3-white">
 
     <div class="w3-container">
-	  <img src="Images/CotonBio.jpg" style="max-width:100%;height:auto;" alt="CotonBio" >
-	  <p>Chez GANT, nous pensons que l'achat de coton biologique est un investissement durable pour un avenir meilleur.</p>
-	  <p><b><span style=color:cornflowerBlue>D'ici 2022, nous prévoyons de remplacer tout le coton conventionnel que nous utilisons par du coton biologique, du coton issu de l'initiative Better Coton Initiative, du coton recyclé, du coton régénératif et du coton de transition.</span></b></p>
+    
+<div class='container center'>
+  	<div class="align-left center"><a href="ProductPage.jsp"><img src="Images/Vector.png" style="margin:20px 0 0 0;"/></a></div>
+  	<div class="align-right center"><h2><b>Le coton biologique</b></h2></div>
+</div>	
+	
+    <img src="Images/BCI_Logo.png" style="max-width:40%;height:auto; margin:20px 100px 0 100px;"alt="CotonBio" >
+	  <p>Chez GANT, nous pensons que l'achat de coton biologique est un investissement durable pour un avenir meilleur.
+	  <span style=color:cornflowerBlue>D'ici 2022, nous prévoyons de remplacer tout le coton conventionnel que nous utilisons par du coton biologique, du coton issu de l'initiative Better Cotton Initiative, du coton recyclé, du coton régénératif et du coton de transition.</span></b></p>
     </div>
   </div>
   <hr>

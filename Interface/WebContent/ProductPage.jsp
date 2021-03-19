@@ -8,7 +8,7 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey">
+<body class="w3-white">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -16,7 +16,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32" style="text-align:center;"> 
-  <img src="Images/Banniere_Produit.png" style="max-width:100%;height:auto;" alt="Banniere" >
+  <img src="Images/product_back.png" style="max-width:100%;height:auto;" alt="Banniere" >
 </header>
 
 <!-- Grid -->
@@ -26,20 +26,20 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
   
   <!-- Blog entry 1-->
-  <div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-card-4 w3-margin w3-yellow">
     <div class="w3-container">
       <h3><b>Etape 1: ${steps[0]._name}</b></h3>
     </div>
 
     <div class="w3-container">
-      <img src="Images/Coton.png" style="max-width:100%;height:auto;" alt="Coton" >
+      <img src="Images/cotton 1.png" style="max-width:100%;height:auto;" alt="Coton" >
       <p>Le coton qui compose votre chemise est issu de <b><span style=color:cornflowerBlue>${steps[0]._location}</span>
       </b> prélevé du <b><span style=color:cornflowerBlue>${steps[0]._startDate} au ${steps[0]._endDate}</span>
       </b>. En 2018, 77% de notre collection était en coton. D'ici 2022, nous envisageons de nous tourner vers de meilleures alternatives que le coton conventionel tel que <b>
       <span style=color:cornflowerBlue>le coton biologique, le coton recyclé, le coton régénératif</span></b> et <b><span style=color:cornflowerBlue>le coton de transition</span></b>.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreCotonBio.jsp"><b>READ MORE »</b></a></p>
+          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreCotonBio.jsp"><b>En savoir plus sur la Better Cotton Initiative</b></a></p>
         </div>
       </div>
     </div>
@@ -47,20 +47,20 @@ and is wrapped around the whole page content, except for the footer in this exam
   <hr>
   
   <!-- Blog entry 2 -->
-  <div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-card-4 w3-margin w3-yellow">
     <div class="w3-container">
       <h3><b>Etape 2: ${steps[1]._name}</b></h3>
     </div>
 
     <div class="w3-container">
-      <img src="Images/Egrenage_Coton.png" style="max-width:100%;height:auto;" alt="Egrenage du coton" >
+      <img src="Images/seed 1.png" style="max-width:100%;height:auto;" alt="Egrenage du coton" >
       <p>Le coton qui compose votre chemise a été égréné à <b><span style=color:cornflowerBlue> ${steps[1]._location}</span></b> du <b>
       <span style=color:cornflowerBlue>${steps[1]._startDate} au ${steps[1]._endDate}</span></b>.</p>
       <p> Nous récupérons à la fin de ce procédé <b><span style=color:cornflowerBlue>une fibre naturelle comme 89% de nos matériaux</span></b>.</p>
     
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreBCI.jsp" ><b>READ MORE »</b></a></p>
+          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreBCI.jsp" ><b>En savoir plus sur l'égrenage</b></a></p>
         </div>
       </div>
     </div>
@@ -68,34 +68,29 @@ and is wrapped around the whole page content, except for the footer in this exam
   <hr>
   
   <!-- Blog entry 3 -->
-  <div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-card-4 w3-margin w3-yellow">
     <div class="w3-container">
       <h3><b>Etape 3: ${steps[2]._name}</b></h3>
     </div>
 
     <div class="w3-container">
-      <img src="Images/Filature_Coton.jpg" style="max-width:100%;height:auto;" alt="Filature du Coton" >
+      <img src="Images/fil.png" style="max-width:100%;height:auto;" alt="Filature du Coton" >
       <p>Une fois égrenées, les fibres naturelles de coton ont ensuite été transformées en fils de coton à <b>
       <span style=color:cornflowerBlue>${steps[2]._location}</span></b> du <b><span style=color:cornflowerBlue>${steps[2]._startDate} au ${steps[2]._endDate}</span></b>.</p>
-  
-    
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreAMFORI.jsp"><b>READ MORE »</b></a></p>
-        </div>
-      </div>
-    </div>
+     
+      
+  </div>
   </div>
   <hr>
   
   <!-- Blog entry 4 -->
-  <div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-card-4 w3-margin w3-yellow">
     <div class="w3-container">
       <h3><b>Etape 4: ${steps[3]._name}</b></h3>
     </div>
 
     <div class="w3-container">
-      <img src="Images/Manufacture_Coton.png" style="max-width:100%;height:auto;" alt="Manufacture" >
+      <img src="Images/Shirt-icon 1.png" style="max-width:100%;height:auto;" alt="Manufacture" >
       <p>Une fois les fils de coton collectés, votre chemise a été fabriquée à <b><span style=color:cornflowerBlue>${steps[3]._location}</span></b> du <b><span style=color:cornflowerBlue>${steps[3]._startDate} au ${steps[3]._endDate}</span></b>.</p>
   
       <p>Partenaire d'Amfori BSCI, nous croyons à la production durable, sociale et équitable. Gant fait partie de cette communauté ambicieuse avec plus de 27000 producteurs engagés.</p>
@@ -103,7 +98,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreCotonBio.jsp"><b>READ MORE »</b></a></p>
+          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreCotonBio.jsp"><b>En savoir plus sur le lien de fabrication</b></a></p>
         </div>
       </div>
     </div>
@@ -111,13 +106,13 @@ and is wrapped around the whole page content, except for the footer in this exam
   <hr>
   
   <!-- Blog entry 5 -->
-  <div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-card-4 w3-margin w3-yellow">
     <div class="w3-container">
       <h3><b>Etape 5: ${steps[4]._name}</b></h3>
     </div>
 
     <div class="w3-container">
-      <img src="Images/Expedition_Coton.png" style="max-width:100%;height:auto;" alt="Expédition" >
+      <img src="Images/trasnport 1.png" style="max-width:100%;height:auto;" alt="Expédition" >
       <p>Une fois fabriquée,votre chemise a été expédiée depuis <b><span style=color:cornflowerBlue> ${steps[4]._location}</span></b> le <b><span style=color:cornflowerBlue>${steps[4]._startDate}</span></b>.</p>
   
       <p>En 2018, <b><span style=color:cornflowerBlue>72% des produits ont été expédiés par voie maritime, 21% par voie routière et 2% par voie aérienne. Le transport maritime des produits représentait au total 3% de l'impact total sur le climat</span></b>.</p>
@@ -125,7 +120,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreExpedition.jsp"><b>READ MORE »</b></a></p>
+          <p><a class="w3-button w3-padding-large w3-white w3-border" href="ReadMoreExpedition.jsp"><b>En savoir plus sur le transport et l'emballage</b></a></p>
         </div>
       </div>
     </div>

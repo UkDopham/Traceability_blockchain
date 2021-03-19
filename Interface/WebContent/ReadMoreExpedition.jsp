@@ -10,7 +10,7 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey">
+<body class="w3-white">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -18,7 +18,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32" style="text-align:center;"> 
-  <img src="Images/Banniere_Produit.png" style="max-width:100%;height:auto;" alt="Banniere" >
+  <img src="Images/package_back.png" style="max-width:100%;height:auto;" alt="Banniere" >
 </header>
 
 <!-- Grid -->
@@ -29,9 +29,11 @@ and is wrapped around the whole page content, except for the footer in this exam
   
   <!-- Blog entry 1-->
   <div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-      <h1><b>Le coton biologique</b></h1>
-    </div>
+    <div class='container center'>
+  	<div class="align-left center"><a href="ProductPage.jsp"><img src="Images/Vector.png" style="margin:20px 0 0 0;"/></a></div>
+  	<div class="align-right center"><h2><b>Emballage</b></h2></div>
+</div>	
+
 
     <div class="w3-container">
 	  <p>Chez GANT nous avons mis en place une politique d'emballage permettant de créer des packagings efficaces et de trouver des 
@@ -40,7 +42,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 	  <b><span style=color:cornflowerBlue>renouvelables et durables.</span></b>
 	  Tous les emballages en papier sont certifiés FSC.</p>
 	  
-	  <img src="Images/FSC.png" style="max-width:100%;height:auto;" alt="FSC">
+	  <img src="Images/FSC.PNG" style="max-width:60%;height:auto;" alt="FSC">
 	  
 	  <p>GANT a également mis en place une politique de transport afin de minimiser l'impact négatif sur l'envrionnement.
 	  Nous nous efforçons en effet d'avoir toujours des chargements de camions complets et des frets aériens minimisés.

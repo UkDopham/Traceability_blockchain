@@ -10,7 +10,7 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey">
+<body class="w3-white">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -18,7 +18,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32" style="text-align:center;"> 
-  <img src="Images/Banniere_Produit.png" style="max-width:100%;height:auto;" alt="Banniere" >
+  <img src="Images/create_back.png" style="max-width:100%;height:auto;" alt="Banniere" >
 </header>
 
 <!-- Grid -->
@@ -29,19 +29,20 @@ and is wrapped around the whole page content, except for the footer in this exam
   
   <!-- Blog entry 1-->
   <div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-	  <img src="amfori_Logo.png" style="max-width:10%;height:auto;float: right; margin:20px 500px 0 0;" alt="BCILogo" >
-      <h1><b>AMFORI BSCI</b></h1>
-    </div>
-
+  <div class='container center'>
+  	<div class="align-left center"><a href="ProductPage.jsp"><img src="Images/Vector.png" style="margin:20px 0 0 0;"/></a></div>
+  	<div class="align-right center"><h2><b>AMFORI BSCI</b></h2></div>
+</div>	
+    <img src="Images/amfori_Logo.png" style="max-width:40%;height:auto; margin:20px 100px 0 100px;"alt="CotonBio" >
+    
     <div class="w3-container">
 	  <p>GANT est membre de la <b><span style=color:cornflowerBlue>Business Social Compliance Initiative (BSCI)</span></b>, une initiative internationale qui fait partie de <b><span style=color:cornflowerBlue>Amfori</span></b> et qui a pour but d'améliorer les conditions de travail dans la chaîne d'approvisionnement mondiale.</p>
 	  <p><b><span style=color:cornflowerBlue>En 2018, toutes les usines d'Asie, d'Afrique et de Turquie ont fait l'objet d'audits sociaux concluants conduits par un tiers.</span></b> Nous avons mis en place un programme d'amélioration ayant pour but de renforcer la capacité de notre base de fournisseurs.</p>
-	  <img src="Images/BetterCotonInitiative.jpg" style="max-width:100%;height:auto;" alt="BetterCotonInitiative" >
+	  <img src="Images/world.png" style="max-width:100%;height:auto;" alt="BetterCotonInitiative" >
       <p style=text-align:center>Emplacements des usines GANT</p>
 	  <div class="w3-row">
         <div class="w3-col m8 s12">
-			<form action="ListeUsinesGant.html">
+			<form action="ListeUsinesGant.jsp">
 				<p><b><input class="w3-button w3-padding-large w3-white w3-border" value="Voir notre liste d'usines »" type="submit"/></b></p>
 			</form>
         </div>

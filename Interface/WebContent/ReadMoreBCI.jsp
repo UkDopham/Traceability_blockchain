@@ -10,15 +10,16 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey">
+<body class="w3-white">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
 <div class="w3-content" style="max-width:1400px">
 
 <!-- Header -->
+
 <header class="w3-container w3-center w3-padding-32" style="text-align:center;"> 
-  <img src="Images/Banniere_Produit.png" style="max-width:100%;height:auto;" alt="Banniere" >
+  <img src="Images/field_back.png" style="max-width:100%;height:auto;" alt="Banniere" >
 </header>
 
 <!-- Grid -->
@@ -28,17 +29,19 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
   
   <!-- Blog entry 1-->
-  <div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-	  <img src="Images/BCI_Logo.png" style="max-width:10%;height:auto;float: right; margin:20px 300px 0 0;" alt="BCILogo" >
-      <h1><b>Better Cotton Initiative</b></h1>
-    </div>
+  <div class="w3-margin w3-white">
 
     <div class="w3-container">
+    
+<div class='container center'>
+  	<div class="align-left center"><a href="ProductPage.jsp"><img src="Images/Vector.png" style="margin:20px 0 0 0;"/></a></div>
+  	<div class="align-right center"><h2><b>Better Coton Initiative</b></h2></div>
+</div>	
+	
+    <img src="Images/BCI_Logo.png" style="max-width:40%;height:auto; margin:20px 100px 0 100px;"alt="CotonBio" >
 	  <p>Depuis le début, le coton a été l'un des matériaux les plus importants pour GANT. Avec notre ambition de produire des vêtements qui durent toute une vie, cette fibre naturelle est fondamentale pour notre activité.</p>
-	  <img src="Images/BetterCotonInitiative.jpg" style="max-width:100%;height:auto;" alt="BetterCotonInitiative" >
-      <p>En 2019, près de 30% de notre coton provenait de la BCI. </p>
-	  <p><b><span style=color:cornflowerBlue>D'ici 2022, nous nous avançons à approvisionner 100% de notre coton de manière plus durable grâce au coton BCI, au coton biologique et au coton recyclé.</span></b></p>
+	  <img src="Images/BetterCotonInitiative.jpg" style="max-width:100%;height:auto;" alt="CotonBio" >
+	  <p><b><span style=color:cornflowerBlue>En 2019, près de 30 % de notre coton provenait de la BCI. D'ici 2022, nous nous avançons à approvisionner 100 % de notre coton de manière plus durable grâce au coton BCI, au coton biologique et au coton recyclé.</span></b></p>
     </div>
   </div>
   <hr>

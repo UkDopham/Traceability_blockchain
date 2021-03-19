@@ -89,5 +89,18 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* Colors */
 .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+.w3-yellow,.w3-hover-yellow:hover{color:#000!important;background-color:#fcfaef!important}
 .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+
+/* Custom */
+.container{ width:100%; }    
+.imgBasic{
+	width:100%;
+}
+.align-left{ float: left;width:10%; }
+.align-right{ float: right;width:90%; }
+.center {
+ text-align:center;
+ display:block;
+}

@@ -29,6 +29,9 @@ public class ProductControllerServlet extends HttpServlet {
 		try {
 			String productName = request.getParameter("searchProduct");
 			System.out.println(productName);
+			if (productName == null) {
+				productName = "Offord Shirt";
+			}
 			Product product = SearchProductInDB(productName);
 			List<Step> steps = SeachStepsInDB(productName);
 			if (product != null 
@@ -53,7 +56,7 @@ public class ProductControllerServlet extends HttpServlet {
 	
 	private Product SearchProductInDB(String productName)
 	{
-		return new Product(productName);
+		return new Product(productName, "Reference", 12, "Images/Oxford_Shirt.jpg");
 	}
 	private List<Step> SeachStepsInDB(String productName)
 	{

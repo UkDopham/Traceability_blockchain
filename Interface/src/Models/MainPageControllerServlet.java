@@ -18,7 +18,7 @@ public class MainPageControllerServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		try {
-			Product product = new Product("Oxford shirt");
+			Product product = new Product("Oxford shirt", "Ref", 12 , "Images/Oxford_Shirt.jpg");
 			request.setAttribute("product", product);
 			
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/MainPage.jsp");

@@ -1,7 +1,7 @@
 <%@ page import="java.util.*,Models.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
-<title>{% block title %} Product {% endblock %}</title>
+<title>${product._name} ${product._reference}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='stylesheet' href='css/style.css'/>
@@ -139,11 +139,12 @@ and is wrapped around the whole page content, except for the footer in this exam
       <h4>Descriptif du produit</h4>
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
-      <li> Nom: TODO</li>
-      <li> Reference: TODO</li>
-      <li> Prix: TODO</li>
-      <li> Photo: TODO
+      <li> Nom: ${product._name}</li>
+      <li> Reference: ${product._reference}</li>
+      <li> Prix: ${product._price}</li>
+      <li>
         <!-- Image -->
+        <img src="${product._picture}" style="max-width:10%;height:auto;" alt="Photo du produit" >
       </li>
     </ul>
   </div>

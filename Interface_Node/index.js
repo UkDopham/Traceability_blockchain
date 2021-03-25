@@ -1,12 +1,11 @@
-var http = require('http');
-var ejs = require('ejs');
-var fs = require('fs');
-const utf8 = require('utf8');
+const ejs = require('ejs');
+const fs = require('fs');
 const express = require('express');
 const app = express();
-port = 80;
+port = 7000;
 
 app.get('/', (req, res) => {
+
   app.use(express.static('public'));	
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   //res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
@@ -69,7 +68,7 @@ app.listen(port, () => {
 	console.log(Buffer.isEncoding('utf8'));
 	console.log(`app listening at http://localhost:${port}`)
 })
-
+main();
 
 
 			//steps.add(new Step("Coton", "Suisse", simpleDateFormat.parse("01-01-2020"),simpleDateFormat.parse("10-01-2020")));

@@ -31,7 +31,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <img src="Images/cotton 1.png" style="max-width:100%;height:auto;" alt="Coton" >
-      <p>Le coton qui compose votre chemise est issu de <b><span style=color:cornflowerBlue><%= step1.country %></span>
+      <p>Le coton qui compose votre chemise est issu de <b><span style=color:cornflowerBlue><%= step1.company %> en <%= step1.country %></span>
       </b> prélevé du <b><span style=color:cornflowerBlue><%= step1.startDate %> au <%= step1.endDate %></span>
       </b>. En 2018, 77% de notre collection était en coton. D'ici 2022, nous envisageons de nous tourner vers de meilleures alternatives que le coton conventionel tel que <b>
       <span style=color:cornflowerBlue>le coton biologique, le coton recyclé, le coton régénératif</span></b> et <b><span style=color:cornflowerBlue>le coton de transition</span></b>.</p>
@@ -52,7 +52,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <img src="Images/seed 1.png" style="max-width:100%;height:auto;" alt="Egrenage du coton" >
-      <p>Le coton qui compose votre chemise a été égréné é <b><span style=color:cornflowerBlue> <%= step2.country %></span></b> du <b>
+      <p>Le coton qui compose votre chemise a été égréné à <b><span style=color:cornflowerBlue> <%= step2.company %> en <%= step2.country %></span></b> du <b>
       <span style=color:cornflowerBlue><%= step2.startDate %> au <%= step2.endDate %></span></b>.</p>
       <p> Nous récupérons à la fin de ce procédé <b><span style=color:cornflowerBlue>une fibre naturelle comme 89% de nos matériaux</span></b>.</p>
     
@@ -74,7 +74,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container">
       <img src="Images/fil.png" style="max-width:100%;height:auto;" alt="Filature du Coton" >
       <p>Une fois égrenées, les fibres naturelles de coton ont ensuite été transformées en fils de coton à <b>
-      <span style=color:cornflowerBlue><%= step3.country %></span></b> du <b><span style=color:cornflowerBlue><%= step3.startDate %> au <%= step3.endDate %></span></b>.</p>
+      <span style=color:cornflowerBlue><%= step3.company %> en <%= step3.country %></span></b> du <b><span style=color:cornflowerBlue><%= step3.startDate %> au <%= step3.endDate %></span></b>.</p>
      
       
   </div>
@@ -89,7 +89,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <img src="Images/Shirt-icon 1.png" style="max-width:100%;height:auto;" alt="Manufacture" >
-      <p>Une fois les fils de coton collectés, votre chemise a été fabriquée à <b><span style=color:cornflowerBlue><%= step4.country %></span></b> du <b><span style=color:cornflowerBlue><%= step4.startDate %> au <%= step4.endDate %></span></b>.</p>
+      <p>Une fois les fils de coton collectés, votre chemise a été fabriquée à <b><span style=color:cornflowerBlue><%= step4.company %> en <%= step4.country %></span></b> du <b><span style=color:cornflowerBlue><%= step4.startDate %> au <%= step4.endDate %></span></b>.</p>
   
       <p>Partenaire d'Amfori BSCI, nous croyons é la production durable, sociale et équitable. Gant fait partie de cette communauté ambicieuse avec plus de 27000 producteurs engagés.</p>
   
@@ -111,7 +111,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <img src="Images/trasnport 1.png" style="max-width:100%;height:auto;" alt="Expédition" >
-      <p>Une fois fabriquée,votre chemise a été expédiée depuis <b><span style=color:cornflowerBlue> <%= step5.country %></span></b> le <b><span style=color:cornflowerBlue><%= step5.startDate %></span></b>.</p>
+      <p>Une fois fabriquée,votre chemise a été expédiée depuis des entrepôts de <b><span style=color:cornflowerBlue> <%=step5.company %> en <%= step5.country %></span></b> le <b><span style=color:cornflowerBlue><%= step5.startDate %></span></b>.</p>
   
       <p>En 2018, <b><span style=color:cornflowerBlue>72% des produits ont été expédiés par voie maritime, 21% par voie routiére et 2% par voie aérienne. Le transport maritime des produits représentait au total 3% de l'impact total sur le climat</span></b>.</p>
   
